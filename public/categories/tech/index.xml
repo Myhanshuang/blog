@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Acacia&#39;s Blog</title>
+    <link>http://acacia.website/categories/tech/</link>
+    <description>Recent content in tech on Acacia&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2024 21:28:26 +0800</lastBuildDate>
+    <atom:link href="http://acacia.website/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建站日志</title>
+      <link>http://acacia.website/2024/buildingsite/</link>
+      <pubDate>Mon, 02 Dec 2024 21:28:26 +0800</pubDate>
+      <guid>http://acacia.website/2024/buildingsite/</guid>
+      <description>2024-11-30 本地试运行成功！ 基于魔改的 hugo stack，对 MnZn 更为友好 2024-12-01 基于 giscus 的评论系统添加完成！ 2024-12-02 完成了大部分的套壳客制化！ 添加了 AntiO2 的友链，感谢大佬捧场~</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Acacia&#39;s Blog</title>
+    <link>http://acacia.website/page/</link>
+    <description>Recent content in Pages on Acacia&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://acacia.website/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://acacia.website/about/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://acacia.website/about/</guid>
+      <description>Welcome to my blog ! 这里是 Acacia 的个人博客，上面会不定期发布一些莫名其妙的东西，包括但不限于一些什么奇怪的经验分享、代码存档、诗词张贴等等。虽然大部分都不</description>
+    </item>
+    <item>
+      <title>Archives</title>
+      <link>http://acacia.website/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://acacia.website/archives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friends</title>
+      <link>http://acacia.website/links/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://acacia.website/links/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://acacia.website/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://acacia.website/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
