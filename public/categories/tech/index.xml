@@ -6,8 +6,22 @@
     <description>Recent content in tech on Acacia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 02 Dec 2024 21:28:26 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 20:27:26 +0800</lastBuildDate>
     <atom:link href="http://acacia.website/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于 giscus 的相关问题修复</title>
+      <link>http://acacia.website/2024/giscusrepair20241206/</link>
+      <pubDate>Fri, 06 Dec 2024 20:27:26 +0800</pubDate>
+      <guid>http://acacia.website/2024/giscusrepair20241206/</guid>
+      <description>我只能说，没有基础确实就只能大声叹气，直接丢失人权了。 问题描述 giscus 的评论系统莫名其妙地掉了，在我将官方的配置文件搬过来之后。 对的，就是这么简单</description>
+    </item>
+    <item>
+      <title>一个奇怪的问题</title>
+      <link>http://acacia.website/2024/cssfindbackaction/</link>
+      <pubDate>Thu, 05 Dec 2024 22:19:26 +0800</pubDate>
+      <guid>http://acacia.website/2024/cssfindbackaction/</guid>
+      <description>解决静态网站 CSS 丢失 在无数次的重复之后，我终于在偶然间排出了这个折磨我已久的问题：CSS 丢失的原因。 问题描述 网站的排版完完全全跟着代码中的顺序</description>
+    </item>
     <item>
       <title>建站日志</title>
       <link>http://acacia.website/2024/buildingsite/</link>
