@@ -13,7 +13,7 @@
       <link>http://acacia.website/2024/filestructanalysis/</link>
       <pubDate>Fri, 06 Dec 2024 21:01:03 +0800</pubDate>
       <guid>http://acacia.website/2024/filestructanalysis/</guid>
-      <description>文件目录总览 my-site/ ├── archetypes/ 模板 ├── assets/ 组件 ├── content/ 内容 ├── data/ 数据 ├── i18n/ 语言 ├── layouts/ 页面 ├── static/ 静态资源 ├── themes/ 主题 └── hugo.toml/yaml/json 配置文件 &amp;mdash;public/ 发布的文</description>
+      <description>文件目录总览 my-site/ ├── archetypes/ 模板 ├── assets/ 组件 ├── content/ 内容 ├── data/ 数据 ├── i18n/ 语言 ├── layouts/ 页面 ├── static/ 静态资源 ├── themes/ 主题 └── hugo.toml/yaml/json 配置文件 ---public/ 发布的文</description>
     </item>
     <item>
       <title>关于 giscus 的相关问题修复</title>

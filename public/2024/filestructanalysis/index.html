@@ -289,7 +289,7 @@
 
 
                 <time class="article-words">
-                    868字
+                    876字
                 </time>
             </div>
         
@@ -302,7 +302,7 @@
     
     
     <h2 id="文件目录总览">文件目录总览</h2>
-<p>my-site/
+<pre><code>my-site/
 ├── archetypes/             模板
 ├── assets/                 组件
 ├── content/                内容
@@ -312,7 +312,8 @@
 ├── static/                 静态资源
 ├── themes/                 主题
 └── hugo.toml/yaml/json     配置文件
-&mdash;public/                  发布的文件夹</p>
+---public/                  发布的文件夹
+</code></pre>
 <h3 id="archetypes">archetypes</h3>
 <p>里面存放着简单的模板，利用命令创建文件的时候就会利用上里面的模板。</p>
 <h3 id="assets">assets</h3>
@@ -320,16 +321,16 @@
 <p>其中友链的相关头像，站点里你的头像（*注：不是ico，是 avatar.png），就放在 /link-img 与 img 下</p>
 <h3 id="content">content</h3>
 <p>你的博客文件就在这里</p>
-<p>content/
+<pre><code>content/
 ├── categories/             目录
 ├   ── category1/
-├   ├    ├──_index.md  //<strong>不</strong>可以重命名
+├   ├    ├──_index.md  //**不**可以重命名
 ├   ├    └──photo1.png //md 文件可能引用的图片
 ├   └── category2/
 ├── page/                   左边栏
 ├   ── name1/
 ├   ├   ├── file1/
-├   ├       └──index.md //<strong>不</strong>可以重命名
+├   ├       └──index.md //**不**可以重命名
 ├   └── name2/
 ├── post/                   文章存放
 ├   ├── year1/
@@ -337,20 +338,45 @@
 ├   ├       ├──_index.md  //可以重命名
 ├   ├       └──photo1.png //md 文件可能引用的图片
 ├   ├   ├── file2/
-├   ├       ├──_index.md
-├   ├       └──photo.png
+├   ├       ├──_index.md 
+├   ├       └──photo.png 
 ├   └── year2/
-├ <br>
-└── tag/                    标签(尚未探索)</p>
+├    
+└── tag/                    标签(尚未探索)
+</code></pre>
 <p>有几点说明：</p>
 <ul>
-<li>你的文章的页首请记住加上 &ldquo;slug&rdquo;, 它会是这篇文章的永久目录所在地。</li>
-<li><strong>不要</strong>去重命名 index 和 _index ，会变得不幸</li>
-<li>md 文件中如果要引用同目录下的文件，目录应该这么填写：../../post/（year）/（md 的 slug）/yourimgname.png ，因为其渲染出来之后是位于另一个文件夹的。</li>
-<li>comments 属性不要出现，目前只要出现评论模块就消失</li>
-<li>draft 属性建议常态设置为 false，毕竟都是本地推上去的。</li>
-<li>本地推上去，是先在本地进行修改，然后结束之后选择 hugo &ndash;&gt; git add public/ &ndash;&gt; git commit -m &ldquo;update something&rdquo; &ndash;&gt; git push &ndash;force origin &ndash;&gt; go to server and use &ldquo;git pull -f origin master&rdquo;，如果遇到冲突就选择接收外界的然后 git add git commit -m &ldquo;fix error&rdquo;</li>
-<li>md 文件的文件头的信息可以去官网查询，一般来说给的 default 就基本够用了。</li>
+<li>
+<p>你的文章的页首请记住加上 &ldquo;slug&rdquo;, 它会是这篇文章的永久目录所在地。</p>
+</li>
+<li>
+<p><strong>不要</strong>去重命名 index 和 _index ，会变得不幸</p>
+</li>
+<li>
+<p>md 文件中如果要引用同目录下的文件，目录应该这么填写，因为其渲染出来之后是位于另一个文件夹的。</p>
+<p><code>../../post/（year）/（md 的 slug）/yourimgname.png </code></p>
+</li>
+<li>
+<p>comments 属性不要出现，目前只要出现评论模块就消失</p>
+</li>
+<li>
+<p>draft 属性建议常态设置为 false，毕竟都是本地推上去的。</p>
+</li>
+<li>
+<p>本地推上去，是先在本地进行修改，然后结束之后选择</p>
+<pre><code>--&gt; rm -r public/
+--&gt; hugo 
+--&gt; git add public/ 
+--&gt; git commit -m &quot;update something&quot; 
+--&gt; git push --force origin 
+--&gt; go to server and use &quot;git clone git@github.com:yourname/repo&quot;
+--&gt; mv public ..
+</code></pre>
+<p><del>如果选择pull遇到冲突就选择接收外界的然后 <code>git add </code> and <code>git commit -m &quot;fix error&quot;</code></del></p>
+</li>
+<li>
+<p>md 文件的文件头的信息可以去官网查询，一般来说给的 default 就基本够用了。</p>
+</li>
 </ul>
 <h3 id="data">data</h3>
 <p>这里目前就是存放友链的 json 文件配置的地方。</p>
