@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge on Acacia&#39;s Blog</title>
+    <link>http://acacia.website/tags/knowledge/</link>
+    <description>Recent content in Knowledge on Acacia&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 06 Dec 2024 21:01:03 +0800</lastBuildDate>
+    <atom:link href="http://acacia.website/tags/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo 目录详细说明</title>
+      <link>http://acacia.website/2024/filestructanalysis/</link>
+      <pubDate>Fri, 06 Dec 2024 21:01:03 +0800</pubDate>
+      <guid>http://acacia.website/2024/filestructanalysis/</guid>
+      <description>文件目录总览 my-site/ ├── archetypes/ 模板 ├── assets/ 组件 ├── content/ 内容 ├── data/ 数据 ├── i18n/ 语言 ├── layouts/ 页面 ├── static/ 静态资源 ├── themes/ 主题 └── hugo.toml/yaml/json 配置文件 &amp;mdash;public/ 发布的文</description>
+    </item>
+  </channel>
+</rss>

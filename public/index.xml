@@ -6,7 +6,79 @@
         <description>Recent content on Acacia&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 06 Dec 2024 20:27:26 +0800</lastBuildDate><atom:link href="http://acacia.website/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 06 Dec 2024 21:01:03 +0800</lastBuildDate><atom:link href="http://acacia.website/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>hugo 目录详细说明</title>
+        <link>http://acacia.website/2024/filestructanalysis/</link>
+        <pubDate>Fri, 06 Dec 2024 21:01:03 +0800</pubDate>
+        
+        <guid>http://acacia.website/2024/filestructanalysis/</guid>
+        <description>&lt;h2 id=&#34;文件目录总览&#34;&gt;文件目录总览&lt;/h2&gt;
+&lt;p&gt;my-site/
+├── archetypes/             模板
+├── assets/                 组件
+├── content/                内容
+├── data/                   数据
+├── i18n/                   语言
+├── layouts/                页面
+├── static/                 静态资源
+├── themes/                 主题
+└── hugo.toml/yaml/json     配置文件
+&amp;mdash;public/                  发布的文件夹&lt;/p&gt;
+&lt;h3 id=&#34;archetypes&#34;&gt;archetypes&lt;/h3&gt;
+&lt;p&gt;里面存放着简单的模板，利用命令创建文件的时候就会利用上里面的模板。&lt;/p&gt;
+&lt;h3 id=&#34;assets&#34;&gt;assets&lt;/h3&gt;
+&lt;p&gt;里面存放着为数众多的站点的相关资源文件，包括但不限于图标、头像、三方组件的图像、scss（页面主题相关的 css）、ts（typescript？）&lt;/p&gt;
+&lt;p&gt;其中友链的相关头像，站点里你的头像（*注：不是ico，是 avatar.png），就放在 /link-img 与 img 下&lt;/p&gt;
+&lt;h3 id=&#34;content&#34;&gt;content&lt;/h3&gt;
+&lt;p&gt;你的博客文件就在这里&lt;/p&gt;
+&lt;p&gt;content/
+├── categories/             目录
+├   ── category1/
+├   ├    ├──_index.md  //&lt;strong&gt;不&lt;/strong&gt;可以重命名
+├   ├    └──photo1.png //md 文件可能引用的图片
+├   └── category2/
+├── page/                   左边栏
+├   ── name1/
+├   ├   ├── file1/
+├   ├       └──index.md //&lt;strong&gt;不&lt;/strong&gt;可以重命名
+├   └── name2/
+├── post/                   文章存放
+├   ├── year1/
+├   ├   ├── file1/
+├   ├       ├──_index.md  //可以重命名
+├   ├       └──photo1.png //md 文件可能引用的图片
+├   ├   ├── file2/
+├   ├       ├──_index.md
+├   ├       └──photo.png
+├   └── year2/
+├ &lt;br&gt;
+└── tag/                    标签(尚未探索)&lt;/p&gt;
+&lt;p&gt;有几点说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你的文章的页首请记住加上 &amp;ldquo;slug&amp;rdquo;, 它会是这篇文章的永久目录所在地。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不要&lt;/strong&gt;去重命名 index 和 _index ，会变得不幸&lt;/li&gt;
+&lt;li&gt;md 文件中如果要引用同目录下的文件，目录应该这么填写：../../post/（year）/（md 的 slug）/yourimgname.png ，因为其渲染出来之后是位于另一个文件夹的。&lt;/li&gt;
+&lt;li&gt;comments 属性不要出现，目前只要出现评论模块就消失&lt;/li&gt;
+&lt;li&gt;draft 属性建议常态设置为 false，毕竟都是本地推上去的。&lt;/li&gt;
+&lt;li&gt;本地推上去，是先在本地进行修改，然后结束之后选择 hugo &amp;ndash;&amp;gt; git add public/ &amp;ndash;&amp;gt; git commit -m &amp;ldquo;update something&amp;rdquo; &amp;ndash;&amp;gt; git push &amp;ndash;force origin &amp;ndash;&amp;gt; go to server and use &amp;ldquo;git pull -f origin master&amp;rdquo;，如果遇到冲突就选择接收外界的然后 git add git commit -m &amp;ldquo;fix error&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;md 文件的文件头的信息可以去官网查询，一般来说给的 default 就基本够用了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data&#34;&gt;data&lt;/h3&gt;
+&lt;p&gt;这里目前就是存放友链的 json 文件配置的地方。&lt;/p&gt;
+&lt;h3 id=&#34;i18n&#34;&gt;i18n&lt;/h3&gt;
+&lt;p&gt;多国语言支持，暂未研究。&lt;/p&gt;
+&lt;h3 id=&#34;layouts&#34;&gt;layouts&lt;/h3&gt;
+&lt;p&gt;页面的结构组织的配件，由 index.html 发起引用，最终递归调用拼出 public 中的 index.html&lt;/p&gt;
+&lt;h3 id=&#34;stastic-后加&#34;&gt;stastic （后加）&lt;/h3&gt;
+&lt;p&gt;静态资源，编译出来在 public 的根目录。&lt;/p&gt;
+&lt;h3 id=&#34;thmems&#34;&gt;thmems&lt;/h3&gt;
+&lt;p&gt;别动（&lt;/p&gt;
+&lt;h3 id=&#34;configyamlhtomjson&#34;&gt;config.yaml/htom/json&lt;/h3&gt;
+&lt;p&gt;配置文件&lt;/p&gt;
+&lt;p&gt;（挖坑待补）&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>关于 giscus 的相关问题修复</title>
         <link>http://acacia.website/2024/giscusrepair20241206/</link>
         <pubDate>Fri, 06 Dec 2024 20:27:26 +0800</pubDate>
